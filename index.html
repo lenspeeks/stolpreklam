@@ -10,11 +10,11 @@
     <body>
         <nav>
             <ul class="menu">
-                <li><a href="">Hem</a></li>
-                <li><a href="">Priser</a></li>
-                <li><a href="">Kunder</a></li>
-                <li><a href="">Kontakt</a></li>
-                <li><a href="">Om oss</a></li>
+                <li><a href=".">Hem</a></li>
+                <li><a href="#priser">Priser</a></li>
+                <li><a href="#kunder">Kunder</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="#om-oss">Om oss</a></li>
             </ul>
         </nav>
 
@@ -23,86 +23,50 @@
                 <h1>StolpReklam i Timrå</h1>
                 <p>Lokal reklam på hög nivå</p>
             </div>
+
+            <section class="tjanster">
+                <h1>Våra tjänster</h1>
+            </section>
+
+            <section class="kunder" id="kunder">
+                <h1>Nöjda kunder</h1>
+            </section>
+
+            <section class="priser" id="priser">
+                <h1>Våra Priser</h1>
+            </section>
+
+            <section class="kontakt" id="kontakt">
+                <div class="header">
+                    <h1>Har du frågor? Kontakta oss!</h1>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <p>blah blah blah</p>
+                    </div>
+                    <form action="" class="contact-form">
+                        <input type="text" name="name" placeholder="Ditt namn" class="form-inputs">
+                        <input type="email" name="email" placeholder="Din Email" class="form-inputs">
+                        <textarea name="message" placeholder="Ditt meddelande" class="form-inputs" required></textarea>
+                        <button type="submit">Skicka</button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="om-oss" id="om-oss">
+                <h1>Vilka är vi egentligen?</h1>
+            </section>
         </main>
 
         <footer>
-            <div class="background">
-              <svg
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                width="100%"
-                height="100%"
-                viewBox="0 0 1600 900"
-              >
-                <defs>
-                  <path
-                    id="wave"
-                    fill="rgb(84,147,252)" 
-                    d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
-            s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z"
-                  />
-                </defs>
-                <g>
-                  <use xlink:href="#wave" opacity=".4">
-                    <animateTransform
-                      attributeName="transform"
-                      attributeType="XML"
-                      type="translate"
-                      dur="8s"
-                      calcMode="spline"
-                      values="270 230; -334 180; 270 230"
-                      keyTimes="0; .5; 1"
-                      keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
-                      repeatCount="indefinite"
-                    />
-                  </use>
-                  <use xlink:href="#wave" opacity=".6">
-                    <animateTransform
-                      attributeName="transform"
-                      attributeType="XML"
-                      type="translate"
-                      dur="6s"
-                      calcMode="spline"
-                      values="-270 230;243 220;-270 230"
-                      keyTimes="0; .6; 1"
-                      keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
-                      repeatCount="indefinite"
-                    />
-                  </use>
-                  <use xlink:href="#wave" opacty=".9">
-                    <animateTransform
-                      attributeName="transform"
-                      attributeType="XML"
-                      type="translate"
-                      dur="4s"
-                      calcMode="spline"
-                      values="0 230;-140 200;0 230"
-                      keyTimes="0; .4; 1"
-                      keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
-                      repeatCount="indefinite"
-                    />
-                  </use>
-                </g>
-              </svg>
-            </div>
-            <section>
-              <ul class="socials">
-                <li><a class="fa-brands fa-x-twitter"></a></li>
-                <li><a class="fa-brands fa-facebook"></a></li>
-                <li><a class="fa-brands fa-linkedin"></a></li>
-              </ul>
-              <ul class="links">
-                <li><a>Hem</a></li>
-                <li><a>Priser</a></li>
-                <li><a>Kunder</a></li>
-                <li><a>Kontakt</a></li>
-                <li><a>Om oss</a></li>
-              </ul>
-              <p class="legal">© 2024 All rights reserved</p>
-            </section>
+            <ul>
+                <li><a href=".">Hem</a></li>
+                <li><a href="#priser">Priser</a></li>
+                <li><a href="#kunder">Kunder</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="#om-oss">Om oss</a></li>
+            </ul>
+            <p class="legal">© 2024 All rights reserved</p>
           </footer>
     </body>
 </html>
