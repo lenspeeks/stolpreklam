@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    --dark: #1a2027;
+    --white: #ffffff;
+    --blue: #3e95ff;
+
+}
+
 body {
 	font-family: "Euclid Circ.menuar A", "Poppins";
 	font-size: 18px;
@@ -7,7 +14,7 @@ body {
     padding: 0;
 	margin-bottom: 100px;
 	min-height: 100vh;
-	background: #1a2027;
+	background: var(--dark);
     position: relative;
 }
 ul {
@@ -16,7 +23,7 @@ ul {
 	list-style: none;
 }
 nav {
-	width: 100%;
+	width: 100vw;
 }
 a {
 	cursor: pointer;
@@ -47,7 +54,7 @@ a {
 	& > li {
 		&:hover {
 			& > a {
-				color: #3e95ff;
+				color: var(--blue);
 				&::before {
 					visibility: visible;
 					scale: 1 1;
@@ -84,7 +91,7 @@ a {
 				height: 3px;
 				bottom: 3px;
 				left: 0px;
-				background-color: #3e95ff;
+				background-color: var(--blue);
 				transition: all 0.2s ease-in-out;
 				scale: 0 0;
 				visibility: hidden;
@@ -100,7 +107,7 @@ a {
 	justify-content: center;
 	align-items: stretch;
 	width: 100%;
-	background-color: #3e95ff;
+	background-color: var(--blue);
 	height: 0;
 	line-height: 40px;
 	box-sizing: border-box;
@@ -110,6 +117,7 @@ a {
 main {
 	margin: 3rem;
 	color: white;
+    scroll-snap-type: y mandatory;
     .hero {
         line-height: 20px;
         text-align: center;
@@ -118,22 +126,77 @@ main {
         }
     }
     .tjanster {
-        display: flex;
-        justify-content: center;
+        scroll-snap-align: start;
+        text-align: center;
+        height: 60vh;
+        .tjanster-container {
+            display: flex;
+            justify-content: space-evenly;
+            .tjanster-left {
+                width: 40vw;
+                text-align: left;
+            }
+            img {
+                width: 250px;
+            }
+            .tjanster-right {
+                width: 40vw;
+            }
+        }
     }
     .kunder {
-        display: flex;
-        justify-content: center;
+        scroll-snap-align: start;
+        text-align: center;
+        height: 60vh;
     }
     .priser {
-        display: flex;
-        justify-content: center;
+        scroll-snap-align: start;
+        text-align: center;
+        height: 60vh;
+        .pris-container {
+            display: flex;
+            justify-content: space-evenly;
+            .pris-left {
+                width: 40vw;
+                text-align: left;
+            }
+            .pris-right {
+                width: 40vw;
+            }
+            img {
+                height: 300px;
+                width: 300px;
+            }
+        }
     }
     .kontakt {
+        scroll-snap-align: start;
         text-align: center;
+        height: 60vh;
         .contact-container {
             display: flex;
             justify-content: space-evenly;
+            vertical-align: middle;
+            .contact-info {
+                width: 30vw;
+                text-align: left;
+                h3 {
+                    line-height: normal;
+                }
+                i {
+                    font-size: 14px;
+                }
+                a {
+                    color: var(--white);
+                    text-decoration: underline;
+                    line-height: 20px;
+                    
+                }
+                svg {
+                    float: left;
+                    margin-right: 10px;
+                }
+            }
             .contact-form {
                 display: flex;
                 flex-direction: column;
@@ -166,15 +229,16 @@ main {
                     color: white;
                     border: none;
                     border-radius: 20px;
-                    background-color: #3e95ff;
+                    background-color: var(--blue);
                     cursor: pointer;
                 }
             }
         }
     }
     .om-oss {
-        display: flex;
-        justify-content: center;
+        scroll-snap-align: start;
+        text-align: center;
+        height: 100vh;
     }
 }
 
@@ -182,14 +246,14 @@ footer {
 	position: absolute;
 	left: 0;
 	bottom: -150px;
-    height: 100px;
+    // height: 120px;
 	min-width: 100vw;
-    padding: 20px 0 20px 0;
-	color: #d6dfed;
-    background-color: #3e95ff;
+    padding: 10px 0 10px 0;
+	color: var(--white);
+    background-color: var(--blue);
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     .legal {
         font-size: 12px;
     }
@@ -209,7 +273,7 @@ footer {
 	}
     a {
         text-decoration: none;
-        color: white;
+        color: var(--white);
     }
 }
 @media (width > 420px) {
