@@ -10,7 +10,7 @@ body {
   font-size: 18px;
   margin: 0;
   padding: 0;
-  margin-bottom: 100px;
+  margin-bottom: 114px;
   min-height: 100vh;
   background: var(--dark);
   position: relative;
@@ -112,6 +112,9 @@ main .hero {
 }
 main .hero h1 {
   font-size: 50px;
+}
+main section {
+  padding-bottom: 100px;
 }
 main .tjanster {
   scroll-snap-align: start;
@@ -234,7 +237,8 @@ main .om-oss {
 footer {
   position: absolute;
   left: 0;
-  bottom: -150px;
+  bottom: -214px;
+  height: 214px;
   min-width: 100vw;
   padding: 10px 0 10px 0;
   color: var(--white);
