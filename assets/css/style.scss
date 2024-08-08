@@ -166,6 +166,10 @@ main {
             .kunder-right {
                 width: 30vw;
                 text-align: left;
+                ul {
+                    font-size: 15px;
+                    list-style: circle;
+                }
             }
         }
     }

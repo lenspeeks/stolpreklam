@@ -157,6 +157,10 @@ main .kunder .kunder-container .kunder-right {
   width: 30vw;
   text-align: left;
 }
+main .kunder .kunder-container .kunder-right ul {
+  font-size: 15px;
+  list-style: circle;
+}
 main .priser {
   scroll-snap-align: start;
   text-align: center;
