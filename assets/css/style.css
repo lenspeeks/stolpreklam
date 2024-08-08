@@ -140,6 +140,23 @@ main .kunder {
   text-align: center;
   height: 60vh;
 }
+main .kunder .kunder-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+main .kunder .kunder-container .kunder-left {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30vw;
+  gap: 10px;
+}
+main .kunder .kunder-container .kunder-right {
+  width: 30vw;
+  text-align: left;
+}
+main .kunder .kunder-container img {
+  width: 150px;
+}
 main .priser {
   scroll-snap-align: start;
   text-align: center;
