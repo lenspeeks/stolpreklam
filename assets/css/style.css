@@ -108,18 +108,30 @@ main {
 }
 main .hero {
   line-height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   text-align: center;
+  align-items: center;
+  height: 80vh;
 }
 main .hero h1 {
-  font-size: 50px;
+  font-size: 70px;
+}
+main .hero p {
+  font-size: 25px;
 }
 main section {
   padding-bottom: 100px;
+  height: 100vh;
+}
+main section h1 {
+  padding-top: 30px;
+  font-size: 35px;
 }
 main .tjanster {
   scroll-snap-align: start;
   text-align: center;
-  height: 60vh;
 }
 main .tjanster .tjanster-container {
   display: flex;
@@ -138,7 +150,6 @@ main .tjanster .tjanster-container .tjanster-right {
 main .kunder {
   scroll-snap-align: start;
   text-align: center;
-  height: 60vh;
 }
 main .kunder .kunder-container {
   display: flex;
@@ -164,7 +175,6 @@ main .kunder .kunder-container .kunder-right ul {
 main .priser {
   scroll-snap-align: start;
   text-align: center;
-  height: 60vh;
 }
 main .priser .pris-container {
   display: flex;
@@ -248,11 +258,6 @@ main .kontakt .contact-container .contact-form button {
   border-radius: 20px;
   background-color: var(--blue);
   cursor: pointer;
-}
-main .om-oss {
-  scroll-snap-align: start;
-  text-align: center;
-  height: 100vh;
 }
 
 footer {

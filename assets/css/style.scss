@@ -120,18 +120,31 @@ main {
     scroll-snap-type: y mandatory;
     .hero {
         line-height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
         text-align: center;
+        align-items: center;
+        height: 80vh;
         h1 {
-            font-size: 50px;
+            font-size: 70px;
         }
+        p {
+            font-size: 25px;
+        }
+
     }
     section {
         padding-bottom: 100px;
+        height: 100vh;
+        h1 {
+            padding-top: 30px;
+            font-size: 35px;
+        }
     }
     .tjanster {
         scroll-snap-align: start;
         text-align: center;
-        height: 60vh;
         .tjanster-container {
             display: flex;
             justify-content: space-evenly;
@@ -150,7 +163,6 @@ main {
     .kunder {
         scroll-snap-align: start;
         text-align: center;
-        height: 60vh;
         .kunder-container {
             display: flex;
             justify-content: space-evenly;
@@ -176,7 +188,6 @@ main {
     .priser {
         scroll-snap-align: start;
         text-align: center;
-        height: 60vh;
         .pris-container {
             display: flex;
             justify-content: space-evenly;
@@ -258,11 +269,6 @@ main {
                 }
             }
         }
-    }
-    .om-oss {
-        scroll-snap-align: start;
-        text-align: center;
-        height: 100vh;
     }
 }
 
