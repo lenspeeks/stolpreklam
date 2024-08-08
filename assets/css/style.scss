@@ -159,13 +159,13 @@ main {
                 flex-wrap: wrap;
                 width: 30vw;
                 gap: 10px;
+                img {
+                    width: 150px;
+                }
             }
             .kunder-right {
                 width: 30vw;
                 text-align: left;
-            }
-            img {
-                width: 150px;
             }
         }
     }

@@ -150,12 +150,12 @@ main .kunder .kunder-container .kunder-left {
   width: 30vw;
   gap: 10px;
 }
+main .kunder .kunder-container .kunder-left img {
+  width: 150px;
+}
 main .kunder .kunder-container .kunder-right {
   width: 30vw;
   text-align: left;
-}
-main .kunder .kunder-container img {
-  width: 150px;
 }
 main .priser {
   scroll-snap-align: start;
