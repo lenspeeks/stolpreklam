@@ -8,7 +8,7 @@
 }
 
 body {
-	font-family: "Euclid Circ.menuar A", "Poppins";
+	font-family: "Poppins";
 	font-size: 18px;
 	margin: 0;
     padding: 0;
@@ -311,5 +311,32 @@ footer {
       align-items: center;
       padding-left: 0;
       gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    section {
+        min-height: auto;
+    }
+    .tjanster-container {
+        flex-direction: column;
+        .tjanster-left {
+            width: 80vw;
+            p {
+                text-align: center;
+            }
+        }
+    }
+    .kunder-container {
+        flex-direction: column;
+    }
+    .pris-container {
+        flex-direction: column;
+        img {
+            display: none;
+        }
+    }
+    .contact-container {
+        flex-direction: column;
     }
 }
