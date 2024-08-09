@@ -6,6 +6,9 @@
     --blue: #3e95ff;
 
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
 	font-family: "Poppins";
@@ -306,6 +309,16 @@ footer {
         color: var(--white);
     }
 }
+
+.hidden {
+    opacity: 0;
+    transition: all 1.5s;
+}
+.show {
+    opacity: 1;
+}
+
+
 @media (width > 420px) {
     footer {
       align-items: center;
@@ -316,27 +329,12 @@ footer {
 
 @media only screen and (max-width: 600px) {
     section {
-        min-height: auto;
+        min-height: 100vh;
+        width: 80vw;
+        margin: 0;
     }
     .tjanster-container {
         flex-direction: column;
-        .tjanster-left {
-            width: 80vw;
-            p {
-                text-align: center;
-            }
-        }
-    }
-    .kunder-container {
-        flex-direction: column;
-    }
-    .pris-container {
-        flex-direction: column;
-        img {
-            display: none;
-        }
-    }
-    .contact-container {
-        flex-direction: column;
+        justify-content: center;
     }
 }
