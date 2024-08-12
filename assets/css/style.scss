@@ -121,25 +121,25 @@ main {
 	margin: 3rem;
 	color: white;
     scroll-snap-type: y mandatory;
+    padding-bottom: 2rem;
     .hero {
-        line-height: 20px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         text-align: center;
         align-items: center;
         height: 80vh;
+        line-height: 20px;
         h1 {
             font-size: 70px;
         }
         p {
             font-size: 25px;
         }
-
     }
     section {
         padding-bottom: 100px;
-        height: 100vh;
+        min-height: 100vh;
         h1 {
             padding-top: 30px;
             font-size: 35px;
@@ -158,9 +158,6 @@ main {
             img {
                 width: 250px;
             }
-            .tjanster-right {
-                width: 40vw;
-            }
         }
     }
     .kunder {
@@ -169,6 +166,7 @@ main {
         .kunder-container {
             display: flex;
             justify-content: space-evenly;
+            gap: 2rem;
             .kunder-left {
                 display: flex;
                 flex-wrap: wrap;
@@ -210,7 +208,7 @@ main {
     .kontakt {
         scroll-snap-align: start;
         text-align: center;
-        height: 60vh;
+        min-height: 60vh;
         .contact-container {
             display: flex;
             justify-content: space-evenly;
@@ -279,7 +277,7 @@ footer {
 	position: absolute;
 	left: 0;
 	bottom: -214px;
-    height: 214px;
+    max-height: 214px;
 	min-width: 100vw;
     padding: 10px 0 10px 0;
 	color: var(--white);
@@ -329,12 +327,88 @@ footer {
 
 @media only screen and (max-width: 600px) {
     section {
-        min-height: 100vh;
-        width: 80vw;
+        min-width: 80vw;
         margin: 0;
+    }
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero {
+        div {
+            display: flex;
+            flex-direction: column;
+            h1 {
+                width: 80vw;
+                line-height: normal;
+                font-size: 60px;
+            }
+        }
     }
     .tjanster-container {
         flex-direction: column;
         justify-content: center;
+        gap: 2rem;
+        .tjanster-left {
+            width: 80vw;
+            p {
+                text-align: left;
+                width: 80vw;
+            }
+        }
+    }
+
+    .kunder-container {
+        flex-direction: column;
+        justify-content: center;
+        .kunder-left {
+            min-width: 80vw;
+            justify-content: center;
+        }
+        .kunder-right {
+            min-width: 80vw;
+            p {
+                width: 80vw;
+            }
+            h4 {
+                width: 80vw;
+            }
+        }
+    }
+
+    .pris-container {
+        flex-direction: column;
+        width: 80vw;
+        .pris-left {
+            p {
+                width: 80vw;
+            }
+        }
+    }
+
+    .contact-container {
+        flex-direction: column;
+        justify-content: center;
+        width: 80vw;
+        gap: 2rem;
+        .contact-info {
+            p {
+                width: 80vw;
+            }
+            h3 {
+                width: 80vw;
+            }
+            ul {
+                width: 80vw;
+            }
+        }
+        .contact-form {
+            width: 80vw;
+            .form-inputs {
+                max-width: 350px;
+            }
+        }
     }
 }
