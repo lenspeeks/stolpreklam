@@ -114,8 +114,8 @@ a {
 }
 
 main {
-	margin: 3rem;
-	color: white;
+	margin: 2rem;
+	color: var(--white);
     scroll-snap-type: y mandatory;
     padding-bottom: 2rem;
     .hero {
@@ -124,9 +124,10 @@ main {
         justify-content: space-evenly;
         text-align: center;
         align-items: center;
-        height: 80vh;
+        height: 100vh;
         line-height: 20px;
         h1 {
+            margin-top: -5vh;
             font-size: 70px;
         }
         p {
@@ -134,7 +135,6 @@ main {
         }
     }
     section {
-        // padding-bottom: 100px;
         min-height: 100vh;
         h1 {
             padding-top: 30px;
@@ -145,12 +145,13 @@ main {
         scroll-snap-align: start;
         text-align: center;
         .tjanster-container {
-            min-height: 70vh;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-evenly;
             align-items: center;
             .tjanster-left {
-                width: 40vw;
+                max-width: 575px;
+                min-height: 245px;
                 text-align: left;
             }
             img {
@@ -162,26 +163,32 @@ main {
         scroll-snap-align: start;
         text-align: center;
         .kunder-container {
-            min-height: 70vh;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-evenly;
             align-items: center;
             gap: 2rem;
             .kunder-left {
                 display: flex;
                 flex-wrap: wrap;
-                width: 30vw;
+                justify-content: center;
+                max-width: 575px;
+                min-height: 450px;
                 gap: 10px;
                 img {
                     width: 150px;
                 }
             }
             .kunder-right {
-                width: 30vw;
+                max-width: 435px;
+                min-height: 500px;
                 text-align: left;
                 ul {
                     font-size: 15px;
                     list-style: circle;
+                    li {
+                        margin-left: 20px;
+                    }
                 }
             }
         }
@@ -190,16 +197,14 @@ main {
         scroll-snap-align: start;
         text-align: center;
         .pris-container {
-            min-height: 70vh;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-evenly;
             align-items: center;
             .pris-left {
-                width: 40vw;
+                max-width: 575px;
+                min-height: 285px;
                 text-align: left;
-            }
-            .pris-right {
-                width: 40vw;
             }
             img {
                 height: 300px;
@@ -213,14 +218,13 @@ main {
         min-height: 60vh;
         .contact-container {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-evenly;
-            vertical-align: middle;
+            align-items: center;
             .contact-info {
-                width: 30vw;
+                max-width: 435px;
+                min-height: 300px;
                 text-align: left;
-                h3 {
-                    line-height: normal;
-                }
                 i {
                     font-size: 14px;
                 }
@@ -239,6 +243,8 @@ main {
                 display: flex;
                 flex-direction: column;
                 align-items: start;
+                max-width: 450px;
+                min-height: 385px;
                 gap: 20px;
                 .form-inputs {
                     width: 400px;
@@ -264,7 +270,7 @@ main {
                     align-items: center;
                     padding: 15px 30px;
                     font-size: 16px;
-                    color: white;
+                    color: var(--white);
                     border: none;
                     border-radius: 20px;
                     background-color: var(--blue);
@@ -280,7 +286,7 @@ footer {
 	left: 0;
 	bottom: -214px;
     max-height: 214px;
-	min-width: 100vw;
+	min-width: 100%;
     padding: 10px 0 10px 0;
 	color: var(--white);
     background-color: var(--blue);
@@ -323,9 +329,6 @@ footer {
 }
 
 @media (max-width: 600px) {
-    section {
-        max-width: 80vw;
-    }
     nav {
         display: none;
     }
@@ -346,73 +349,18 @@ footer {
             display: flex;
             flex-direction: column;
             h1 {
-                width: 80vw;
+                margin-top: 5vh;
                 line-height: normal;
                 font-size: 50px;
             }
         }
     }
-    .tjanster-container {
-        flex-direction: column;
-        justify-content: center;
-        gap: 2rem;
-        .tjanster-left {
-            min-width: 80vw;
-            p {
-                text-align: left;
-                max-width: 80vw;
-            }
-        }
-    }
-
-    .kunder-container {
-        flex-direction: column;
-        justify-content: center;
-        .kunder-left {
-            min-width: 80vw;
-            justify-content: center;
-        }
-        .kunder-right {
-            min-width: 80vw;
-            p {
-                width: 80vw;
-            }
-            h4 {
-                width: 80vw;
-            }
-        }
-    }
-
-    .pris-container {
-        flex-direction: column;
-        .pris-left {
-            min-width: 80vw;
-            p {
-                max-width: 80vw;
-            }
-        }
-    }
-
-    .contact-container {
-        flex-direction: column;
-        justify-content: center;
-        width: 80vw;
-        gap: 2rem;
-        .contact-info {
-            p {
-                width: 80vw;
-            }
-            h3 {
-                width: 80vw;
-            }
-            ul {
-                width: 80vw;
-            }
-        }
-        .contact-form {
-            width: 80vw;
-            .form-inputs {
-                max-width: 80%;
+    .kontakt {
+        .contact-container {
+            .contact-form {
+                .form-inputs {
+                    max-width: 70vw;
+                }
             }
         }
     }
