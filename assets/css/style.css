@@ -124,7 +124,7 @@ main .hero .overlay {
   justify-content: space-evenly;
   text-align: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   line-height: 20px;
 }
 main .hero .overlay h1 {
@@ -245,6 +245,9 @@ main .kontakt .contact-container .contact-info svg {
   float: left;
   margin-right: 10px;
 }
+main .kontakt .contact-container .contact-info .small {
+  display: hidden;
+}
 main .kontakt .contact-container .contact-form {
   display: flex;
   flex-direction: column;
@@ -341,6 +344,9 @@ footer a {
   footer ul {
     display: none;
   }
+  section {
+    padding-bottom: 3rem;
+  }
   .center {
     display: block;
     margin-left: auto;
@@ -349,14 +355,21 @@ footer a {
   .hero {
     min-height: 100vh;
   }
-  .hero div {
+  .hero .overlay div {
     display: flex;
     flex-direction: column;
   }
-  .hero div h1 {
+  .hero .overlay div h1 {
+    padding: 2rem;
     margin-top: 5vh;
     line-height: normal;
     font-size: 50px;
+  }
+  .kontakt .contact-container .contact-info .small {
+    display: block;
+  }
+  .kontakt .contact-container .contact-info .big {
+    display: none;
   }
   .kontakt .contact-container .contact-form .form-inputs {
     max-width: 70vw;
