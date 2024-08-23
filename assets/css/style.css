@@ -245,9 +245,6 @@ main .kontakt .contact-container .contact-info svg {
   float: left;
   margin-right: 10px;
 }
-main .kontakt .contact-container .contact-info .small {
-  display: hidden;
-}
 main .kontakt .contact-container .contact-form {
   display: flex;
   flex-direction: column;
@@ -337,6 +334,14 @@ footer a {
   opacity: 1;
 }
 
+@media (min-width: 601px) {
+  .small {
+    display: none;
+  }
+  .big {
+    display: block;
+  }
+}
 @media (max-width: 600px) {
   nav {
     display: none;

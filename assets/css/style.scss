@@ -255,9 +255,6 @@ main {
                     float: left;
                     margin-right: 10px;
                 }
-                .small {
-                    display: hidden;
-                }
             }
             .contact-form {
                 display: flex;
@@ -348,6 +345,14 @@ footer {
     opacity: 1;
 }
 
+@media (min-width: 601px) {
+    .small {
+        display: none;
+    }
+    .big {
+        display: block;
+    }
+}
 @media (max-width: 600px) {
     nav {
         display: none;
@@ -372,9 +377,7 @@ footer {
             div {
                 display: flex;
                 flex-direction: column;
-                // padding: 2rem;
                 h1 {
-                    // padding: 2rem;
                     margin-top: 5vh;
                     line-height: normal;
                     font-size: 50px;
