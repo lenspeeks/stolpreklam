@@ -296,6 +296,22 @@ main {
             }
         }
     }
+    .error {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 2rem;
+        gap: 4rem;
+        min-height: 80vh;
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: var(--blue);
+            padding: 15px 30px;
+            border-radius: 20px;
+        }
+    } 
 }
 
 footer {
