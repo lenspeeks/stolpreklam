@@ -178,12 +178,12 @@ main .kunder .kunder-container .kunder-left {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 575px;
-  min-height: 450px;
+  max-width: 700px;
+  min-height: 225px;
   gap: 10px;
 }
 main .kunder .kunder-container .kunder-left img {
-  width: 150px;
+  width: 200px;
 }
 main .kunder .kunder-container .kunder-right {
   max-width: 435px;
